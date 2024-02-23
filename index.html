@@ -9,43 +9,30 @@
 </head>
 <body>
 
-     
-    <form class="col formStyle">
-        <h2>Cadastor de escalação</h2> 
-        <div class="form-group col-md-4">
-          <label for="formGroupExampleInput">Nome</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite o nome jogador...">
-        </div>
-        <div class="form-group col-md-4">
-            <label for="inputState">Posição </label>
-            <select id="inputState" class="form-control">
-              <option selected>Selecione...</option>    
-              <option>Volante</option>
-              <option>Zagueiro</option>
-              <option>Meia</option>
-              <option>Atacante</option>
-              <option>Laterais direito</option>
-              <option>Laterais esquerdo</option>
-              <option>Goleiro</option>
-            </select>
-          </div>
-          <div class="form-group col-md-4">           
-            <label for="inputState">Número da Camisa</label>
-            <select id="inputState" class="form-control">
-            <option selected>Selecione...</option>
-            <option>01</option>
-            <option>05</option>
-            <option>03</option>
-            <option>04</option>
-            <option>05</option>
-            <option>06</option>
-            <option>07</option>
-            <option>08</option>
-            <option>10</option>            
-            </select>
-          </div>
+   <div class="wrapper">
+        <form action="" class="form-area">
+            <div class="msg-area">
+                <label for="msg">Message</label>
+                <textarea id="msg"></textarea>
+            </div>
+            <div class="details-area">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+
+                <label for="iname">Posição</label>
+                <input type="text" id="iname">
+
+                <label for="camisa">Número da camisa</label>
+                <input type="text" id="camisa" >
+
+                <button type="submit" id="cadastrar">Escalar</button>
+            </div>
+        </form>
         
-          <button type="submit" class="btn btn-primary col-md-2">Sign in</button>
-      </form>
+    </div>
+     <div id="tabela"></div>
+    
+
+  <script src="script.js"></script>
 </body>
 </html>
